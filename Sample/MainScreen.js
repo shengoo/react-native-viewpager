@@ -10,7 +10,7 @@ import {
 var TopScreen = require('./TopScreen');
 var BottomScreen = require('./BottomScreen');
 
-var MainScreen = React.createClass({
+var MainScreen = createReactClass({
 
   render: function() {
     return (

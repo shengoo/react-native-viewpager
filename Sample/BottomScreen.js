@@ -32,7 +32,7 @@ function notifyMessage(msg: string) {
   }
 }
 
-var ImagesScreen = React.createClass({
+var ImagesScreen = createReactClass({
   getInitialState: function() {
     var dataSource = new ViewPager.DataSource({
       pageHasChanged: (p1, p2) => p1 !== p2,

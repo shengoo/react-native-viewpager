@@ -13,6 +13,7 @@ var {
   Animated,
   StyleSheet,
 } = ReactNative;
+import createReactClass from 'create-react-class';
 
 var StaticRenderer = require('react-native/Libraries/Components/StaticRenderer');
 var TimerMixin = require('react-timer-mixin');
@@ -21,7 +22,7 @@ var DefaultViewPageIndicator = require('./DefaultViewPageIndicator');
 var deviceWidth = Dimensions.get('window').width;
 var ViewPagerDataSource = require('./ViewPagerDataSource');
 
-var ViewPager = React.createClass({
+var ViewPager = createReactClass({
   mixins: [TimerMixin],
 
   statics: {
